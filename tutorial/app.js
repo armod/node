@@ -9,13 +9,6 @@
 // console.log(`hey it's my first node app!!!`)
 
 //Modules
-const secret = 'Super Secret'
-const maciek = 'Maciek'
-const maciej = 'Maciej'
-
-const sayHi = (name) => {
-  console.log(`hello there ${name}`)
-}
 
 sayHi('Maciej')
 sayHi(maciej)
