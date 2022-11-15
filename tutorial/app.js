@@ -13,12 +13,13 @@ const names = require('./module')
 // lub
 // const { maciej, maciek } = require('./module')
 const sayHi = require('./utile')
+const data = require('./alternative')
+require('./mind-granade')
+// console.log(data)
 
-console.log(names)
-
-sayHi('Maciej')
-sayHi(names.maciej)
-sayHi(names.maciek)
+// sayHi('Maciej')
+// sayHi(names.maciej)
+// sayHi(names.maciek)
 //lub
 // sayHi(maciej)
 // sayHi(maciek)
