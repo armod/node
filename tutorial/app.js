@@ -9,7 +9,16 @@
 // console.log(`hey it's my first node app!!!`)
 
 //Modules
+const names = require('./module')
+// lub
+// const { maciej, maciek } = require('./module')
+const sayHi = require('./utile')
+
+console.log(names)
 
 sayHi('Maciej')
-sayHi(maciej)
-sayHi(maciek)
+sayHi(names.maciej)
+sayHi(names.maciek)
+//lub
+// sayHi(maciej)
+// sayHi(maciek)
