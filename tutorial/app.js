@@ -9,12 +9,12 @@
 // console.log(`hey it's my first node app!!!`)
 
 //Modules
-const names = require('./module')
+// const names = require('./module')
 // lub
 // const { maciej, maciek } = require('./module')
-const sayHi = require('./utile')
-const data = require('./alternative')
-require('./mind-granade')
+// const sayHi = require('./utile')
+// const data = require('./alternative')
+// require('./mind-granade')
 // console.log(data)
 
 // sayHi('Maciej')
@@ -23,3 +23,7 @@ require('./mind-granade')
 //lub
 // sayHi(maciej)
 // sayHi(maciek)
+
+// OS Modules
+
+const os = require('os')
