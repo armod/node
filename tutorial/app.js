@@ -64,9 +64,11 @@ const server = http.createServer((req, res) => {
   // console.log(req)
   if (req.url === '/') {
     res.end('Welcome to our home page')
+    return
   }
   if (req.url === '/about') {
-    res.end('Hera us history')
+    res.end('Here us history')
+    return
   }
   res.end(`<h1>Oops!</h1>
   <p>we cant to find the page</p>
