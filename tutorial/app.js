@@ -58,21 +58,30 @@
 // const absolute = path.resolve(__dirname, 'content', 'subfolder', 'test.txt')
 // console.log(absolute)
 
-const http = require('http')
+// const http = require('http')
 
-const server = http.createServer((req, res) => {
-  // console.log(req)
-  if (req.url === '/') {
-    res.end('Welcome to our home page')
-    return
-  }
-  if (req.url === '/about') {
-    res.end('Here us history')
-    return
-  }
-  res.end(`<h1>Oops!</h1>
-  <p>we cant to find the page</p>
-  <a href="/">back home</a>`)
-})
+// const server = http.createServer((req, res) => {
+//   // console.log(req)
+//   if (req.url === '/') {
+//     res.end('Welcome to our home page')
+//     return
+//   }
+//   if (req.url === '/about') {
+//     res.end('Here us history')
+//     return
+//   }
+//   res.end(`<h1>Oops!</h1>
+//   <p>we cant to find the page</p>
+//   <a href="/">back home</a>`)
+// })
 
-server.listen(5000)
+// server.listen(5000)
+
+// HTTP
+
+const _ = require('lodash')
+
+const items = [1, [2, [3, [4, [5]]]]]
+
+const newItems = _.flattenDeep(items)
+console.log(newItems)
