@@ -116,11 +116,19 @@
 // console.log('third')
 // // end
 
-const http = require('http')
+// const http = require('http')
 
-const server = http.createServer((req, res) => {
-  console.log(res, req)
+// const server = http.createServer((req, res) => {})
+// server.listen(5000, () => {
+//   console.log('Server listen on porst: 5000')
+// })
+
+const EventEmitter = require('events')
+
+const customEmitter = new EventEmitter()
+
+customEmitter.on('response', () => {
+  console.log(`data recived`)
 })
-server.listen(5000, () => {
-  console.log('Server listen on porst: 5000')
-})
+
+customEmitter.emit('response')
