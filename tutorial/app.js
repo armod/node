@@ -103,6 +103,13 @@
 
 // start
 console.log('first')
+setInterval(() => {
+  console.log('second')
+}, 1000)
+console.log('third')
+// end
+// start
+console.log('first')
 setTimeout(() => {
   console.log('second')
 }, 0)
