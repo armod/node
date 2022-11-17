@@ -102,16 +102,25 @@
 // console.log('start next task')
 
 // start
-console.log('first')
-setInterval(() => {
-  console.log('second')
-}, 1000)
-console.log('third')
-// end
-// start
-console.log('first')
-setTimeout(() => {
-  console.log('second')
-}, 0)
-console.log('third')
-// end
+// console.log('first')
+// setInterval(() => {
+//   console.log('second')
+// }, 1000)
+// console.log('third')
+// // end
+// // start
+// console.log('first')
+// setTimeout(() => {
+//   console.log('second')
+// }, 0)
+// console.log('third')
+// // end
+
+const http = require('http')
+
+const server = http.createServer((req, res) => {
+  console.log(res, req)
+})
+server.listen(5000, () => {
+  console.log('Server listen on porst: 5000')
+})
