@@ -79,9 +79,24 @@
 
 // HTTP
 
-const _ = require('lodash')
+// const _ = require('lodash')
 
-const items = [1, [2, [3, [4, [5]]]]]
+// const items = [1, [2, [3, [4, [5]]]]]
 
-const newItems = _.flattenDeep(items)
-console.log(newItems)
+// const newItems = _.flattenDeep(items)
+// console.log(newItems)
+
+// Event loop
+
+const { readFile } = require('fs')
+console.log('start a first task')
+
+readFile('./content/first.txt', 'utf8', (err, result) => {
+  if (err) {
+    console.log(err)
+    return
+  }
+  console.log(result)
+  console.log('completed first task')
+})
+console.log('start next task')
