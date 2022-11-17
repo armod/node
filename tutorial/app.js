@@ -86,17 +86,25 @@
 // const newItems = _.flattenDeep(items)
 // console.log(newItems)
 
-// Event loop
+// ------------ Event loop -----------
 
-const { readFile } = require('fs')
-console.log('start a first task')
+// const { readFile } = require('fs')
+// console.log('start a first task')
 
-readFile('./content/first.txt', 'utf8', (err, result) => {
-  if (err) {
-    console.log(err)
-    return
-  }
-  console.log(result)
-  console.log('completed first task')
-})
-console.log('start next task')
+// readFile('./content/first.txt', 'utf8', (err, result) => {
+//   if (err) {
+//     console.log(err)
+//     return
+//   }
+//   console.log(result)
+//   console.log('completed first task')
+// })
+// console.log('start next task')
+
+// start
+console.log('first')
+setTimeout(() => {
+  console.log('second')
+}, 0)
+console.log('third')
+// end
